@@ -28,13 +28,16 @@ public class BlocDInstructions extends ArbreAbstrait {
 
     @Override
     public void verifier() {
+        for (ArbreAbstrait a : programme){
+            a.verifier();
+        }
     }
     
     @Override
     public String toMIPS() {
         String s="";
         for(ArbreAbstrait aa : programme){
-            s=s + aa.toMIPS() ;
+            s = s + aa.toMIPS() ;
         }
         return s;
     }

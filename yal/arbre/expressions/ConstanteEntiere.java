@@ -7,11 +7,11 @@ public class ConstanteEntiere extends Constante {
     }
 
     @Override
-    public String toMIPS() { System.out.println(cste);
+    public String toMIPS() {
         StringBuilder stringBuilder = new StringBuilder("");
-        stringBuilder.append("li $v0 , 1 \t# $v0 <- 1 (code du print entier)\n");
-        stringBuilder.append("li $a0 ,"+cste+"\n");
-        stringBuilder.append("syscall \t# afficher\n");
+        stringBuilder.append("li $v0 , 1 \n");
+        stringBuilder.append("li $a0 , "+cste+"\n");
+        stringBuilder.append("syscall\n");
         return String.valueOf(stringBuilder);
     }
 

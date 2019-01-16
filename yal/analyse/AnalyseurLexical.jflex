@@ -37,6 +37,7 @@ idf = [A-Za-z_][A-Za-z_0-9]*
 
 csteE = [0-9]+
 guillemet = [\"]
+commentaire = [/][/].*
 
 finDeLigne = \r|\n
 espace = {finDeLigne}  | [ \t\f]
