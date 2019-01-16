@@ -1,0 +1,4 @@
+li $v0 , 1 	# $v0 <- 1 (code du print entier)
+li $a0 ,1
+syscall 	# afficher
+
